@@ -1,0 +1,152 @@
+
+
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ColheitaDigtial/Login/Cadastro</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    
+    <!-- Links para o CSS e o JS -->
+    <link href="login.css" rel="stylesheet">
+    <script src="login.js"></script>
+  </head>
+  <body>    
+    
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <div class="container-fluid" style="margin-right: 20%;">
+          <div class="col-md-5">
+            <a class="navbar-brand" href="#"><img src="imagens/logoPrj.JPG" alt="" style="height: 120px; width: 130px;" onclick="aoClicar1()"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" aria-current="page" href="#" onclick="aoClicar1()">Início</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" onclick="aoClicar2()">Produtor</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Currículo</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar4()">Sobre nós</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar5()">Benefícios</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
+                </button>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
+                </button>
+              </li>
+            </ul>
+            <!-- Botões do menu -->
+           <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Início</a></li>
+              <li><a class="dropdown-item" href="#">Produtor</a></li>
+              <li><a class="dropdown-item" href="#">Currículo</a></li>
+              <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
+              <li><a class="dropdown-item" href="#">Benefícios</a></li>
+              <li><a class="dropdown-item" href="#">Assistência Técnica</a></li>
+              <li><a class="dropdown-item active" id="oBotao" href="#">Login / Cadastro</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="options-list"></div>
+      <div class="caixalogin" style="margin-top: 350px;">
+    
+        <p class="textologin">Faça seu login</p>
+        <b class="textocrasscnt">Acesse sua conta</b>
+        <p class="textocrasscnt" style="font-size: 15px;">informe seu e-mail para continuar.</p>
+    
+        <div class="caixa-email">
+          <div style="flex-grow: 1;">
+            <input id="email" type="email" class="campo-email" placeholder="digite seu email" style="padding-bottom: 15px; font-size: 20px; font-family: Arial;">
+          </div>
+        </div>
+        <a href="https://youtu.be/xvFZjo5PgG0?si=RKdVmcLaEUgqTf02"> Esqueceu a sua senha?</a>
+        <button style="margin-top: 30px;" class="continuar-botão" onclick="verificarEmail()">  
+          Continuar
+        </button>
+        <div class="mensagem-erro"></div>
+    
+        <button style="margin-top: 40px; ;" class="criar-conta-botão" onclick="abrirModal()">
+          Criar conta
+        </button>
+        <div id="modal" class="modal">
+          <div class="modal-conteúdo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <div class="caixa-branca">
+              <h2>Crie uma conta</h2>
+    
+              <form id="formulario-cadastro" action="cadastro.php" method="post">
+                <div class="form-group">
+                  <label for="email-cadastro">Email:</label>
+                  <input id="email" type="email" class="form-control" id="email-cadastro" name="email-cadastro" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                  <label for="senha-cadastro">Senha:</label>
+                  <input id="password" type="password" class="form-control" id="senha-cadastro" name="senha-cadastro" placeholder="Digite sua senha" required>
+                </div>
+                <div class="form-group">
+                  <label for="username">Nome de usuário:</label>
+                  <input id="username" type="text" class="form-control" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+                </div>
+                <button type="submit" class="btn btn-primary" name="cadastro">Criar conta</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+        
+            <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- Optional JavaScript; choose one of the two! -->
+    
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+      </body>
+    </html>

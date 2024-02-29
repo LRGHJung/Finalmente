@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ColheitaDigtial/Produtor</title>
+    
+      <!-- Bootstrap core CSS -->
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="produtorCSS.css">
+    <script src="produtorJS.js"></script>
+  </head>
+  <body>    
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <div class="container-fluid" style="margin-right: 20%;">
+          <div class="col-md-5">
+            <a class="navbar-brand" href="#"><img src="imagens/logoPrj.JPG" alt="" style="height: 120px; width: 130px;" onclick="aoClicar1()"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" aria-current="page" href="#" onclick="aoClicar1()">Início</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" onclick="aoClicar2()">Produtor</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Currículo</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar4()">Sobre nós</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar5()">Benefícios</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
+                </button>
+              </li>
+            </ul>
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <button type="button" class="btn btn-light">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
+                  </button>
+                </li>
+              </ul>
+           <!-- Botões do menu -->
+           <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="aoClicar1()">Início</a></li>
+              <li><a class="dropdown-item active" id="oBotao" href="#" onclick="aoClicar2()">Produtor</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar3()">Currículo</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar4()">Sobre Nós</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar5()">Benefícios</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar7()">Assistência Técnica</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar6()">Login / Cadastro</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <main class="container-fluid">
+      
+      <h1>PRODUTORES </h1>
+
+      <div class="d-flex justify-content-between">
+
+        
+    
+        <div class="card" style="width: 18rem;">
+            <img src="imagens/WhatsApp Image 2024-01-30 at 15.41.36.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">José</h5>
+              <p class="card-text">nome: José Cardoso da Silva 
+                <br>
+                idade: 45 anos
+                <br>
+                vendo: Milho, Soja e Trigro</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaJanelaModal_J">Entrar em contato</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="imagens/JqBaCToqcjw1xpEBk3nM--2--fhxmr.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Arthur</h5>
+              <p class="card-text">nome: Arthur Mendes
+                <br>
+                idade: 35 anos
+                <br>
+                vendo: Feijão, Arroz e Cebolas</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaJanelaModal_B">Entrar em contato</a>
+            </div>
+          </div>
+
+
+          <div class="card" style="width: 18rem;">
+            <img src="imagens/598379_normal redneck _xl-1024-v1-0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Robson </h5>
+              <p class="card-text">nome: Robson da Silva 
+                <br>
+                idade: 45 anos
+                <br>
+                vendo: Maças, Laranjas e Bananas</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaJanelaModal_R">Entrar em contato</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="imagens/310162_normal redneck _xl-1024-v1-0.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Luiz</h5>
+              <p class="card-text">nome: Luiz Cardoso 
+                <br>
+                idade: 41 anos
+                <br>
+                vendo: Cenoura, Tomate, Batata e Beteraba</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaJanelaModal_Z">Entrar em contato</a>
+            </div>
+          </div>
+
+        </div>
+    </main>
+    
+    
+      </footer>
+    </main>
+    
+    
+        <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+
+
+
+
+
+  <!-- Janela modal Botelho -->
+<div class="modal fade" id="minhaJanelaModal_B" tabindex="-1" aria-labelledby="minhaJanelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="minhaJanelaModalLabel_B">Minha Janela Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da janela modal -->
+        <div class="mapBox">
+        WhatsApp - (42)89239-899
+        <br>
+        Local - Rancho Alegre - Joinville SC
+        <br>
+        e-mail - ranchoCD@gmail.com
+        <br>
+        Currículo - LINK
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12608.97449835159!2d-48.963278183525404!3d-26.279202756477968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1709162810272!5m2!1spt-BR!2sbr" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Janela modal Robson -->
+<div class="modal fade" id="minhaJanelaModal_R" tabindex="-1" aria-labelledby="minhaJanelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="minhaJanelaModalLabel_B">Minha Janela Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da janela modal -->
+        <div class="mapBox">
+        WhatsApp - (34)89296-776
+        <br>
+        Local - Fazenda Evaristo - Blumenau SC
+        <br>
+        e-mail - evaristCD@gmail.com
+        <br>
+        Currículo - LINK
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.394718143463!2d-49.53879330630754!3d-26.2945852133523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ddd9e6bc0e73cf%3A0x41d5c26a88c78643!2sFazenda%20Evaristo!5e0!3m2!1spt-BR!2sbr!4v1709163266505!5m2!1spt-BR!2sbr" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Janela modal Ze -->
+<div class="modal fade" id="minhaJanelaModal_Z" tabindex="-1" aria-labelledby="minhaJanelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="minhaJanelaModalLabel_B">Minha Janela Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da janela modal -->
+        <div class="mapBox">
+        WhatsApp - (34)88275-000
+        <br>
+        Local - Sítio da Prosperidade
+        <br>
+        e-mail - prosperCD@gmail.com
+        <br>
+        Currículo - LINK
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.965317528132!2d-48.874148025273044!3d-27.220238676465307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df4ffd1eade453%3A0x4b2294fe5e24895d!2sS%C3%ADtio%20da%20Prosperidade!5e0!3m2!1spt-BR!2sbr!4v1709163536029!5m2!1spt-BR!2sbr" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- Janela modal Jose -->
+ <div class="modal fade" id="minhaJanelaModal_J" tabindex="-1" aria-labelledby="minhaJanelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="minhaJanelaModalLabel_B">Minha Janela Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da janela modal -->
+        <div class="mapBox">
+        WhatsApp - (23)89770-000
+        <br>
+        Local - Recanto do Balseiro
+        <br>
+        e-mail - recantoCD@gmail.com
+        <br>
+        Currículo - LINK
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3545.4655456545815!2d-52.374955425269704!3d-27.298615076419274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e35feffc0c0665%3A0x39e7da958120a989!2sRecanto%20do%20Balseiro!5e0!3m2!1spt-BR!2sbr!4v1709163883669!5m2!1spt-BR!2sbr" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<hr class="featurette-divider">
+    
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container fim -->
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Retornar ao topo</a></p>
+    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+</html>

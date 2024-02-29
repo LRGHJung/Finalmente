@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ColheitaDigtial/Currículo</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Links para o CSS e o JS -->
+    <link href="cadastroCSS.css" rel="stylesheet">
+    <script src="cadastroJS.js"></script>
+  </head>
+  <body>    
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <div class="container-fluid" style="margin-right: 20%;">
+            <div class="col-md-5">
+                <a class="navbar-brand" href="#"><img src="imagens/logoPrj.JPG" alt="" style="height: 120px; width: 130px;" onclick="aoClicar1()"></a>
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" aria-current="page" href="#" onclick="aoClicar1()">Início</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" onclick="aoClicar2()">Produtor</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Currículo</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar4()">Sobre nós</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar5()">Benefícios</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
+                </button>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
+                </button>
+              </li>
+            </ul>
+           <!-- Botões do menu -->
+           <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="aoClicar1()">Início</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar2()">Produtor</a></li>
+              <li><a class="dropdown-item active" id="oBotao" href="#" onclick="aoClicar3()">Currículo</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar4()">Sobre Nós</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar5()">Benefícios</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar7()">Assistência Técnica</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar6()">Login / Cadastro</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="corDeFundo">
+    
+        <!-- Currículo -->
+<div class="curriculo">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.curriculo,.corpo,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey corpo">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="imagens/310162_normal redneck _xl-1024-v1-0.png" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2 class="corNome">Luiz Cardoso</h2>
+          </div>
+        </div>
+        <br>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Agricultor - 41 Anos</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Blumenau - SC</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>luizCD@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>12244-35534</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Produtos</b></p><br>
+          <p>Batatas</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:45%">45%</div>
+          </div><br>
+          <p>Beterraba</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">
+              <div class="w3-center w3-text-white">30%</div>
+            </div>
+          </div><br>
+          <p>Cenoura</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:15%">15%</div>
+          </div><br>
+          <p>Tomate</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:10%">10%</div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    <br><br>
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiência de Trabalho</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Produtor de pequeno/médio porte</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2008 - <span class="w3-tag w3-teal w3-round">Atualmente</span></h6>
+          <p>Possuo mais de 20 anos de experiência nos campos de agricultura que vinham de minha família. No momento procuro clientes interessados e produtos frescos e de qualidades.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Negociações e Comércio</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2004 - <span class="w3-tag w3-teal w3-round">Atualmente</span></h6>
+          <p>Venho regendo o camando da fazenda de minha família a cerca de 11 anos, desde então faço as negociações das mercadorias até mesmo do transporte, para que sempre cheguem com a qualidade a qual havia sido negociada.</p>
+          <hr>
+        </div>
+        
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Universidade Federal de Jundiaí</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fev 1994 - Out 1997 - <span class="w3-tag w3-teal w3-round">Concluído</span></h6>
+          <p>Cursei agronomia por 3 semestres e conclui um curso técnico de botânica.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Ciências Agrárias</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Certificado pela USCP em Minas Gerais.</p>
+          <hr>
+        </div>
+      </div>
+
+    <!-- Fim coluna Esquerda -->
+    </div>
+    
+  <!-- Fim grade -->
+  </div>
+  
+  <!-- Fim pagina conteiner -->
+</div>
+
+</body>
+</div>
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Retornar ao topo</a></p>
+        <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </div>
+    </main>
+    
+    
+        <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

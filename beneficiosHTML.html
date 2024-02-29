@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ColheitaDigtial/SobreNos</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Links para o CSS e o JS -->
+    <link href="beneficiosCSS.css" rel="stylesheet">
+    <script src="beneficiosJS.js"></script>
+  </head>
+  <body>    
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+        <div class="container-fluid" style="margin-right: 20%;">
+            <div class="col-md-5">
+                <a class="navbar-brand" href="#"><img src="imagens/logoPrj.JPG" alt="" style="height: 120px; width: 130px;" onclick="aoClicar1()"></a>
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                    <a class="nav-link" aria-current="page" href="#" onclick="aoClicar1()">Início</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">    
+                    <a class="nav-link" href="#" onclick="aoClicar2()">Produtor</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar3()">Currículo</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar4()">Sobre nós</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar5()">Benefícios</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar7()">Assistencia Técnica</a>
+                </button>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <button type="button" class="btn btn-light">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" onclick="aoClicar6()">Login/Cadastre-se</a>
+                </button>
+              </li>
+            </ul>
+           <!-- Botões do menu -->
+           <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" onclick="aoClicar1()">Início</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar2()">Produtor</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar3()">Currículo</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar4()">Sobre Nós</a></li>
+              <li><a class="dropdown-item active" id="oBotao" href="#" onclick="aoClicar5()">Benefícios</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar7()">Assistência Técnica</a></li>
+              <li><a class="dropdown-item" href="#" onclick="aoClicar6()">Login / Cadastro</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="corDeFundo">
+    
+        <!-- Nossa história -->
+    
+        <hr class="featurette-divider">
+            <div class="container">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Benefícios da Colheita Digital.</h2>
+                        <p class="lead">Feito para facilitar e garantir maior chance de sucesso nas negociações entre fornecedores e compradores, criando um ambiente de uso simples.
+                            Você merece os produtos de melhor qualidade em suas refeições, e estamos aqui para ajudar à fornecer isso! 
+                        </div>
+                    <div class="col-md-5">
+                        <img src="imagens/benefi.png" alt="" width="490" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+                        
+                </div>
+          </div>
+          
+        </div>
+
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div><!-- /.container fim -->
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Retornar ao topo</a></p>
+        <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </div>
+    </main>
+    
+    
+        <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

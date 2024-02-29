@@ -1,0 +1,170 @@
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed; /* Permite que o modal fique sobre o conteúdo */
+    z-index: 1; /* Posiciona o modal sobre todo o conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Fundo escuro com transparência */
+    overflow: auto; /* Permite rolar o conteúdo do modal, se necessário */
+  }
+  
+  /* Estilo do conteúdo do modal */
+  .modal-conteúdo {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza o modal verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Define a largura do modal */
+  }
+  .caixa-branca {
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  /* Estilo do botão fechar do modal */
+  .fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .fechar:hover,
+  .fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+.mensagem-erro {
+    font-size: 14px;
+    margin-top: 5px;
+    justify-content: left;
+    text-align: left;
+}
+
+
+
+.continuar-botão {
+    width: 600px;
+    height: 70px;
+    background-color: rgb(11, 151, 11);
+    border: 2px solid rgb(11, 151, 11);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-family: Calibri;
+    transition: font-size 0.3s, text-shadow 0.3s;
+}
+
+.continuar-botão:hover {
+    font-size: 30px; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4); 
+}
+.criar-conta-botão {
+    width: 600px;
+    height: 70px;
+    background-color: rgb(0, 0, 255);
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-family: Calibri;
+    transition: font-size 0.3s, text-shadow 0.3s;
+}
+.criar-conta-botão:hover {
+    font-size: 30px; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4); 
+}
+
+
+
+
+
+
+
+.caixa-email {
+    width: 600px;
+    height: 70px;
+    background-color: #fff;
+    border: 2px solid #c5e3ff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 0 0 15  px rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+.campo-email {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-top: 10px;
+}
+
+
+
+.caixalogin{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+
+}
+
+.elemento{
+    margin-top: -20px;
+}
+
+.textologin{
+    font-size: 30px;
+    margin-top: -670px;
+    padding-top: 50px;
+}
+
+.linha {
+    width: 100%;
+    height: 2px; 
+    background-color: #000000;
+    margin-top: -30px;
+     
+}
+
+.textocrasscnt{
+    padding-top: -50px ;
+    font-size: 25px;
+    font-family: Roboto;
+    color: #6899c3;
+}
